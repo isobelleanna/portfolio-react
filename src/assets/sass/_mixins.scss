@@ -1,0 +1,19 @@
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centerText() {
+  text-align: center;
+}
+
+@mixin paddingMargin() {
+  padding: 1vh;
+  margin: 1vh;
+}
+
+@mixin verticalPadding() {
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+}
