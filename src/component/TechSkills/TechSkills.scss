@@ -1,2 +1,166 @@
 @use "../../assets/sass/mixins" as *;
 @use "../../assets/sass/variable" as *;
+
+.title {
+  @include flexCenter();
+  @include centerText();
+  @include paddingMargin();
+  @include verticalPadding();
+  font-size: 35px;
+  &__about-me {
+    font-size: 50px;
+  }
+}
+
+.techical-skill__p {
+  @include verticalPadding();
+  @include paddingMargin();
+  display: none;
+  font-family: $secondary-font;
+}
+
+.tech-grid {
+  font-family: $secondary-font;
+  @include verticalPadding();
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "icon--git icon--html  icon--css"
+    "label--git label--html label--css"
+    "icon--javascript icon--scss icon--bem"
+    "label--javascript label--scss label--bem"
+    "icon--react icon--java icon--spring"
+    "label--react label--java label--spring";
+  gap: 1rem;
+  width: 70%;
+  margin-inline: auto;
+  place-items: center;
+}
+
+.grid__item {
+  @include flexCenter();
+  text-align: center;
+}
+
+.grid__label {
+  @include verticalPadding();
+  @include centerText();
+}
+
+.grid__icon {
+  width: 10vh;
+  height: 10vh;
+}
+
+.grid__icon--git {
+  grid-area: icon--git;
+}
+
+.grid__label--git {
+  grid-area: label--git;
+}
+
+.grid__icon--html {
+  grid-area: icon--html;
+}
+
+.grid__label--html {
+  grid-area: label--html;
+}
+
+.grid__icon--css {
+  grid-area: icon--css;
+}
+
+.grid__label--css {
+  grid-area: label--css;
+}
+
+.grid__icon--javascript {
+  grid-area: icon--javascript;
+}
+
+.grid__label--javascript {
+  grid-area: label--javascript;
+}
+
+.grid__icon--scss {
+  grid-area: icon--scss;
+}
+
+.grid__label--scss {
+  grid-area: label--scss;
+}
+
+.grid__icon--bem {
+  grid-area: icon--bem;
+}
+
+.grid__label--bem {
+  grid-area: label--bem;
+}
+
+.grid__icon--java {
+  grid-area: icon--java;
+}
+
+.grid__label--java {
+  grid-area: label--java;
+}
+
+.grid__icon--react {
+  grid-area: icon--react;
+}
+
+.grid__label--react {
+  grid-area: label--react;
+}
+
+.grid__icon--spring {
+  grid-area: icon--spring;
+}
+
+.grid__label--spring {
+  grid-area: label--spring;
+}
+
+@media screen and (min-width: 454px) and (max-width: 830px) {
+  /* ipad screen */
+  .techical-skill {
+    @include flexCenter();
+    &__p {
+      @include flexCenter();
+      @include centerText();
+      color: $quinary-colour;
+      width: 70%;
+    }
+  }
+  .tech-grid {
+    gap: 1rem;
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  /* laptop screen */
+  .techical-skill {
+    @include flexCenter();
+    &__p {
+      @include flexCenter();
+      @include centerText();
+      color: $quinary-colour;
+      width: 40%;
+    }
+  }
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
+      "icon--git icon--html  icon--css icon--javascript icon--scss icon--bem icon--react icon--java icon--spring"
+      "label--git label--html label--css label--javascript label--scss label--bem label--react label--java label--spring";
+    gap: 1rem;
+    width: 70%;
+    margin-inline: auto;
+  }
+}

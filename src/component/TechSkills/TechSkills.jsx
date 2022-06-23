@@ -1,5 +1,14 @@
 import React from "react";
 import "./TechSkills.scss";
+import git from "../../assets/image/git.png";
+import html from "../../assets/image/html.png";
+import css from "../../assets/image/css.png";
+import javaScript from "../../assets/image/javascript.png";
+import scss from "../../assets/image/scss.png";
+import bem from "../../assets/image/bem.png";
+import react from "../../assets/image/react.png";
+import java from "../../assets/image/java.png";
+import spring from "../../assets/image/spring.png";
 
 const TechSkills = () => {
   return (
@@ -14,54 +23,54 @@ const TechSkills = () => {
       <div class="tech-grid">
         <img
           class="grid__item grid__icon grid__icon--git"
-          src="./img/git.png"
-          alt=""
+          src={git}
+          alt="git icon"
         />
         <img
           class="grid__item grid__icon grid__icon--html"
-          src="./img/html.png"
-          alt=""
+          src={html}
+          alt="html icon"
         />
         <img
           class="grid__item grid__icon grid__icon--css"
-          src="./img/css.png"
-          alt=""
+          src={css}
+          alt="css icon"
         />
         <p class="grid__label grid__item grid__label--git">Git</p>
         <p class="grid__label grid__item grid__label--html">HTML 5</p>
         <p class="grid__label grid__item grid__label--css">CSS3</p>
         <img
           class="grid__item grid__icon grid__icon--javascript"
-          src="./img/javascript.png"
-          alt=""
+          src={javaScript}
+          alt="JavaScript icon"
         />
         <img
           class="grid__item grid__icon grid__icon--scss"
-          src="./img/scss.png"
-          alt=""
+          src={scss}
+          alt="scss icon"
         />
         <img
           class="grid__item grid__icon grid__icon--bem"
-          src="./img/bem.png"
-          alt=""
+          src={bem}
+          alt="bem icon"
         />
         <p class="grid__label grid__item grid__label--javascript">Javascript</p>
         <p class="grid__label grid__item grid__label--scss">SCSS</p>
         <p class="grid__label grid__item grid__label--bem">BEM</p>
         <img
           class="grid__item grid__icon grid__icon--react"
-          src="./img/react.png"
-          alt=""
+          src={react}
+          alt="react icon"
         />
         <img
           class="grid__item grid__icon grid__icon--java"
-          src="./img/java.png"
-          alt=""
+          src={java}
+          alt="java icon"
         />
         <img
           class="grid__item grid__icon grid__icon--spring"
-          src="./img/spring.png"
-          alt=""
+          src={spring}
+          alt="Spring Boot icon"
         />
         <p class="grid__label grid__item grid__label--react">React</p>
         <p class="grid__label grid__item grid__label--java">Java</p>

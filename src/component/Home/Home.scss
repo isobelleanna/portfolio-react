@@ -1,0 +1,68 @@
+@use "../../assets/sass/mixins" as *;
+@use "../../assets/sass/variable" as *;
+
+.intro {
+  @include paddingMargin();
+  @include verticalPadding();
+  padding: 40px;
+  background-color: $secondary-colour;
+  &__h2 {
+    @include verticalPadding();
+    @include paddingMargin();
+    color: $quinary-colour;
+  }
+  &__p {
+    @include verticalPadding();
+    @include paddingMargin();
+    font-size: 70px;
+    font-weight: 1000;
+  }
+  &__button {
+    @include verticalPadding();
+    @include paddingMargin();
+    background-color: $tertiary-colour;
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 10px $quinary-colour;
+  }
+}
+
+@media screen and (min-width: 454px) and (max-width: 830px) {
+  /* ipad screen */
+  .intro {
+    @include flexCenter();
+    flex-direction: column;
+    &__h2 {
+      @include flexCenter();
+    }
+    &__p {
+      @include flexCenter();
+      @include centerText();
+    }
+    &__button {
+      @include flexCenter();
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (min-width: 830px) {
+  /* laptop screen */
+  .intro {
+    @include flexCenter();
+    flex-direction: column;
+    &__h2 {
+      @include flexCenter();
+    }
+    &__p {
+      @include flexCenter();
+      @include centerText();
+    }
+    &__button {
+      @include flexCenter();
+      width: 40%;
+    }
+  }
+}
