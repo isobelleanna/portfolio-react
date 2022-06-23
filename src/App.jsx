@@ -1,11 +1,15 @@
 import "./App.scss";
-import Footer from "./component/Footer/Footer";
-import Main from "./container/Main/Main";
+import Home from "./container/Home/Home";
+import TechSkills from "./container/TechSkills/TechSkills";
+import About from "./container/About/About";
+import Footer from "./container/Footer/Footer";
 
 function App() {
   return (
     <div className="app">
-      <Main />
+      <Home />
+      <TechSkills />
+      <About />
       <Footer />
     </div>
   );
