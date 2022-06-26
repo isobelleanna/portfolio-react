@@ -1,7 +1,7 @@
 @use "../../assets/sass/mixins" as *;
 @use "../../assets/sass/variable" as *;
 .footer {
-  background-color: $tertiary-colour;
+  background-color: $pink-colour;
   padding: 5vh;
   &__icons {
     @include flexCenter();

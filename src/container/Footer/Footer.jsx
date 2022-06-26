@@ -6,7 +6,7 @@ import Cv from "../../assets/image/cv.png";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer__icons">
         <a href="https://github.com/isobelleanna">
           <img
@@ -25,7 +25,7 @@ const Footer = () => {
 
         <img className="footer__img footer__img--cv" src={Cv} alt="CV icon" />
       </div>
-      <h2 className="footer__h2">email@email.co.uk</h2>
+      <h2 className="footer__h2">isobellejoyce6@gmail.com</h2>
     </footer>
   );
 };

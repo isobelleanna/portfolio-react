@@ -4,7 +4,7 @@ import headshot from "../../assets/image/portfolio-headshot.png";
 
 const About = () => {
   return (
-    <div className="about-me">
+    <div className="about-me" id="about">
       <div className="container">
         <div className="title__about-me">
           <h3 className="title title__about-me">About Me</h3>

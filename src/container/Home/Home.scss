@@ -18,6 +18,9 @@
     font-weight: 1000;
   }
   &__button {
+    border: 1px solid $primary-colour;
+    color: $primary-colour;
+    text-decoration: none;
     @include verticalPadding();
     @include paddingMargin();
     background-color: $tertiary-colour;
