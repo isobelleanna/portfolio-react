@@ -70,16 +70,18 @@
   }
 }
 
-@media screen and (min-width: 454px) and (max-width: 830px) {
+@media screen and (min-width: 454px) and (max-width: 920px) {
   /* ipad screen */
   .card {
-    width: 30vh;
+    height: 630px;
+    width: 300px;
   }
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 920px) {
   /* laptop screen */
   .card {
-    width: 40vh;
+    height: 780px;
+    width: 260px;
   }
 }

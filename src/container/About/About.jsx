@@ -5,13 +5,16 @@ import headshot from "../../assets/image/portfolio-headshot.png";
 const About = () => {
   return (
     <div className="about-me" id="about">
-      <div className="container">
+      <div className="about-me__content">
         <div className="title__about-me">
           <h3 className="title title__about-me">About Me</h3>
         </div>
-        <div className="about-me__img">
-          <img className="about-me__img" src={headshot} alt="headshot" />
-        </div>
+
+        <img
+          className="about-me__img"
+          src={headshot}
+          alt="headshot of Isobelle"
+        />
         <div className="about-me__p">
           <p className="about-me__p">
             I am currently training as a full stack developer with _nology.
