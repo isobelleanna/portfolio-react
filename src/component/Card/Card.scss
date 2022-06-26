@@ -2,8 +2,34 @@
 @use "../../assets/sass/variable" as *;
 
 .card {
+  height: 600px;
+  width: 200px;
   padding: 2vh;
   font-family: $secondary-font;
+  border: 1px solid $secondary-colour;
+  border-radius: 20px;
+
+  &__1 {
+    grid-area: card__1;
+  }
+  &__2 {
+    grid-area: card__2;
+  }
+  &__3 {
+    grid-area: card__3;
+  }
+  &__4 {
+    display: none;
+    grid-area: card__4;
+  }
+  &__5 {
+    display: none;
+    grid-area: card__5;
+  }
+  &__6 {
+    display: none;
+    grid-area: card__6;
+  }
   &__img {
     width: 99%;
     display: flex;
@@ -23,14 +49,24 @@
 }
 
 .links {
-  @include verticalPadding();
-  display: flex;
-  align-items: center;
+  &__code {
+    @include verticalPadding();
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  &__live {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
   &__title {
     padding-right: 1vh;
+    text-decoration: none;
   }
   &__i {
     padding-right: 1vh;
+    text-decoration: none;
   }
 }
 

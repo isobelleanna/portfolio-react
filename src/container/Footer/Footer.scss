@@ -13,9 +13,12 @@
     font-size: 3vh;
   }
   &__img {
-    @include paddingMargin();
-    height: 6vh;
-    width: 6vh;
+    margin: 1em;
+    border: 2px solid $quaternary-colour;
+    padding: 10px;
+    border-radius: 16px;
+    height: 3vh;
+    width: 3vh;
   }
 }
 

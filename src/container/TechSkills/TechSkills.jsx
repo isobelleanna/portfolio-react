@@ -12,12 +12,11 @@ import spring from "../../assets/image/spring.png";
 
 const TechSkills = () => {
   return (
-    <div>
+    <div className="tech">
       <h3 className="title">Technical Skills</h3>
       <div className="techical-skill">
         <p className="techical-skill__p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-          commodi facilis!
+          Below is a list of my current skills.
         </p>
       </div>
       <div className="tech-grid">

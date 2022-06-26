@@ -17,11 +17,11 @@ const Card = ({
       <h2 className="card__stack">{cardTitle}</h2>
       <p className="card__content">{cardContent}</p>
       <div className="links">
-        <a href={codeLink}>
+        <a className="links__code" href={codeLink}>
           <h5 className="links__title">Code</h5>
           <i className="fa-solid fa-code links__i"></i>
         </a>
-        <a href={liveLink}>
+        <a className="links__live" href={liveLink}>
           <h5 className="links__title">Preview</h5>
           <i className="fa-solid fa-eye links__i"></i>
         </a>

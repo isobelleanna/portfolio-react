@@ -1,15 +1,16 @@
 @use "../../assets/sass/mixins" as *;
 @use "../../assets/sass/variable" as *;
 
+.tech {
+  @include flexCenterColumn();
+}
+
 .title {
   @include flexCenter();
   @include centerText();
   @include paddingMargin();
   @include verticalPadding();
   font-size: 35px;
-  &__about-me {
-    font-size: 50px;
-  }
 }
 
 .techical-skill__p {
@@ -20,6 +21,7 @@
 }
 
 .tech-grid {
+  @include flexCenterColumn();
   font-family: $secondary-font;
   @include verticalPadding();
   display: grid;

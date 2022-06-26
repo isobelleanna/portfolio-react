@@ -1,2 +1,31 @@
 @use "../../assets/sass/variable" as *;
 @use "../../assets/sass/mixins" as *;
+
+.card-list {
+  @include flexCenterColumn();
+  gap: 1em;
+}
+
+@media screen and (min-width: 454px) and (max-width: 830px) {
+  /* ipad screen */
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "card__1 card__2"
+      "card__3 card__4 "
+      "card__5 card__6";
+  }
+}
+
+@media screen and (min-width: 830px) {
+  /* laptop screen */
+
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "card__1 card__2 card__3"
+      "card__4 card__5 card__6";
+  }
+}

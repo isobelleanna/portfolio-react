@@ -14,17 +14,13 @@ const About = () => {
         </div>
         <div className="about-me__p">
           <p className="about-me__p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At ea dolor
-            nihil deleniti commodi ducimus delectus ipsa maxime voluptates
-            debitis itaque quam, molestiae error nam velit pariatur dolore,
-            veritatis ad.
+            I am currently training as a full stack developer with _nology.
           </p>
         </div>
         <div className="about-me__p2">
           <p className="about-me__p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At ea dolor
-            nihil deleniti commodi ducimus delectus ipsa maxime voluptates
-            debitis itaque quam.
+            I have a degree in Production Arts and design and previously worked
+            as a wardrobe supervisor on cruise ships.
           </p>
         </div>
       </div>
