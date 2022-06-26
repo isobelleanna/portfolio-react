@@ -1,0 +1,76 @@
+@use "../../assets/sass/mixins" as *;
+@use "../../assets/sass/variable" as *;
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include paddingMargin();
+  @include verticalPadding();
+  &__title {
+    font-family: $primary-font;
+    color: $quinary-colour;
+    font-size: 2em;
+    @include paddingMargin();
+    justify-content: flex-start;
+  }
+  &__bar {
+    @include paddingMargin();
+  }
+  &__button {
+    display: none;
+    border: none;
+    background-color: $white-colour;
+    color: $quinary-colour;
+    padding: 10px;
+    margin: 10px;
+    &--active {
+      border: 1px solid $primary-colour;
+      background-color: $tertiary-colour;
+      border-radius: 8px;
+      padding: 10px;
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 454px) and (max-width: 830px) {
+  /* ipad screen */
+  .nav {
+    &__icon {
+      display: none;
+    }
+    &__bar--laptop {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    &__button {
+      display: block;
+      &--active {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (min-width: 830px) {
+  /* laptop screen */
+  .nav {
+    &__icon {
+      display: none;
+    }
+    &__bar--laptop {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    &__button {
+      display: block;
+      &--active {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use "../../assets/sass/mixins" as *;
+@use "../../assets/sass/variable" as *;
+
+.card {
+  padding: 2vh;
+  font-family: $secondary-font;
+  &__img {
+    width: 99%;
+    display: flex;
+    justify-self: center;
+  }
+  &__stack {
+    @include verticalPadding();
+    color: $quaternary-colour;
+  }
+  &__title {
+    @include verticalPadding();
+  }
+  &__content {
+    @include verticalPadding();
+    color: $quinary-colour;
+  }
+}
+
+.links {
+  @include verticalPadding();
+  display: flex;
+  align-items: center;
+  &__title {
+    padding-right: 1vh;
+  }
+  &__i {
+    padding-right: 1vh;
+  }
+}
+
+@media screen and (min-width: 454px) and (max-width: 830px) {
+  /* ipad screen */
+  .card {
+    width: 30vh;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  /* laptop screen */
+  .card {
+    width: 40vh;
+  }
+}
