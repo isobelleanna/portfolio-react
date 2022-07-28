@@ -38,36 +38,30 @@ const CardList = () => {
       />
       <Card
         cardClass="card card__4"
-        cardTitle="FLAG GAME"
-        cardStack="VANILLA JAVASCRIPT"
+        cardTitle="TO DO LIST"
+        cardStack="REACT"
         cardImage={ticketTracker}
-        cardContent="Guess the flags of countries around the world in a wordle style
-            game. My brief was to create a working game that would test my
-            knowledge of JavaScript and push my problem solving skills."
-        codeLink="https://github.com/isobelleanna/flag-game"
-        liveLink="https://isobelleanna.github.io/flag-game/"
+        cardContent="To do list app with a delete card function."
+        codeLink="https://github.com/isobelleanna/todo-list-project"
+        liveLink="https://github.com/isobelleanna/todo-list-project"
       />
       <Card
         cardClass="card card__5"
-        cardTitle="FLAG GAME"
-        cardStack="VANILLA JAVASCRIPT"
+        cardTitle="FULLSTACK COURSE DIRECTORY"
+        cardStack="REACT SPRING BOOT JAVA MYSQL"
         cardImage={ticketTracker}
-        cardContent="Guess the flags of countries around the world in a wordle style
-            game. My brief was to create a working game that would test my
-            knowledge of JavaScript and push my problem solving skills."
-        codeLink="https://github.com/isobelleanna/flag-game"
-        liveLink="https://isobelleanna.github.io/punk-app/"
+        cardContent="A course directory built using the CRUD methodology."
+        codeLink="https://github.com/isobelleanna/fullstack-course-app"
+        liveLink="https://github.com/isobelleanna/fullstack-course-app"
       />
       <Card
         cardClass="card card__6"
-        cardTitle="FLAG GAME"
-        cardStack="VANILLA JAVASCRIPT"
+        cardTitle="CLIENT PROJECT"
+        cardStack="REACT"
         cardImage={ticketTracker}
-        cardContent="Guess the flags of countries around the world in a wordle style
-            game. My brief was to create a working game that would test my
-            knowledge of JavaScript and push my problem solving skills."
-        codeLink="https://github.com/isobelleanna/flag-game"
-        liveLink="https://isobelleanna.github.io/punk-app/"
+        cardContent="Frontend developed for the early careers foundation."
+        codeLink="https://github.com/nology-tech/niue-ecf"
+        liveLink="https://ecf-future-hub.web.app/"
       />
     </div>
   );

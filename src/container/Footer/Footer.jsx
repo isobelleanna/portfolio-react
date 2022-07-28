@@ -2,7 +2,6 @@ import React from "react";
 import "./Footer.scss";
 import LinkedIn from "../../assets/image/linked-in.png";
 import GitHub from "../../assets/image/git-hub.png";
-import Cv from "../../assets/image/cv.png";
 
 const Footer = () => {
   return (
@@ -22,8 +21,6 @@ const Footer = () => {
             alt="LinkedIn icon"
           />
         </a>
-
-        <img className="footer__img footer__img--cv" src={Cv} alt="CV icon" />
       </div>
       <h2 className="footer__h2">isobellejoyce6@gmail.com</h2>
     </footer>
